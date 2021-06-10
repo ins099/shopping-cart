@@ -3,6 +3,8 @@ import {
   REMOVE_TO_CART,
   LOAD_CURRENT_ITEM,
   ADJUST_QTY,
+  SET_USER,
+  GET_USER,
 } from '../actionTypes/index';
 
 export const addToCart = item => {
@@ -41,3 +43,11 @@ export const loadCurrentItem = item => {
     },
   };
 };
+
+export const getUser = () => ({
+  type: GET_USER,
+});
+export const setUser = user => ({
+  type: SET_USER,
+  user,
+});
