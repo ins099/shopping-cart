@@ -3,7 +3,7 @@ import shoppingReducers from './shoppingReducers';
 
 const rootReducer = combineReducers({
   //pass in the reducers
-  shop: shoppingReducers,
+  shoppingReducers,
 });
 
 export default rootReducer;
